@@ -6,7 +6,7 @@
 
   <groupId>ar.utn.wmstms</groupId>
   <artifactId>wms-tms-ecommerce</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <name>wms-tms-ecommerce</name>
   <!-- FIXME change it to the project's website -->
