@@ -1,0 +1,29 @@
+# Compilados
+target/
+*.class
+*.jar
+*.war
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Configuración local (NO subir)
+.env
+*.env
+application-local.properties
+application-local.yml
+config.local.*
+*.local
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

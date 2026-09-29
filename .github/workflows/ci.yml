@@ -1,0 +1,29 @@
+name: CI
+
+# Se ejecuta en TODO Pull Request y en cada push a main o develop
+on:
+  pull_request:
+  push:
+    branches: [ main, develop ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Compilar y testear
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Configurar JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Compilar, testear y empaquetar
+        run: mvn -B clean verify

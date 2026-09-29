@@ -1,0 +1,19 @@
+# CODEOWNERS – WMS/TMS e-Commerce
+# La última línea que coincide es la que manda.
+# Reemplazar por los usernames reales de GitHub.
+
+# Por defecto: todos son dueños (cualquiera de los otros dos puede aprobar)
+*                           @mateogrosso @lautarozatti @frangarcia23
+
+# Módulo WMS
+/src/main/java/**/wms/      @mateogrosso @frangarcia23
+
+# Módulo TMS
+/src/main/java/**/tms/      @lautarozatti @frangarcia23
+
+# Configuración del repo, CI y build
+/.github/                   @mateogrosso @lautarozatti
+pom.xml                     @mateogrosso @lautarozatti
+
+# Documentación
+*.md                        @mateogrosso @frangarcia23
